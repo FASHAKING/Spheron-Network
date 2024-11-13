@@ -1,6 +1,5 @@
-# Spheron-Network
+# Spheron-Network-Worker-Node
 
-# Spheron Network Worker Node
 Spheron’s Fizz Nodes offer a low-barrier entry point for anyone looking to contribute resources to Spheron’s decentralized compute network—and earn ongoing rewards for their contributions.
 
 Whether you're looking to run a basic CPU configuration or a powerful GPU setup, this guide will walk you through the entire process
@@ -8,7 +7,7 @@ Whether you're looking to run a basic CPU configuration or a powerful GPU setup,
 ***You earn $FN points that will eventually merge with $SPHN tokens***
 
 
-# Step-by-Step Guide to Run Fizz Node
+# Guide to Run Fizz Node
 
 ## Hardware Requirement
 ![373857829-d9d9f0a7-a2f2-41da-8194-16d6dd4b8a00](https://github.com/user-attachments/assets/d6bcdc17-18a5-4305-9f83-19bdf71d998f)
@@ -24,18 +23,21 @@ Whether you're looking to run a basic CPU configuration or a powerful GPU setup,
 
 4. Select your node's OS, resources, Region, Payment Tokens, and Provider ( I linux because i am using a Linux Machine, if you are using personal PC you can choose Windows and also a GPU Node if your pc has a GPU )
 
+![Screenshot 2024-11-13 110634](https://github.com/user-attachments/assets/7fea5805-2caf-4955-ae27-971549f04121)
 
-![image](https://github.com/user-attachments/assets/2ce43536-0cbd-435a-baf3-9beb0c05c645)
+![Screenshot 2024-11-13 113321](https://github.com/user-attachments/assets/fecd72f9-aca1-41e6-a252-4b2bc2510f37)
 
-5. Click **“Register Your Fizz Node“**, To complete the registration, you'll need some ETH on the Spheron chain for gas fees. If you don't have any, you can get some from our faucet at https://faucet.spheron.network
 
-![image](https://github.com/user-attachments/assets/afcd4cd4-240d-46aa-a5d8-6d35bdea0741)
+5. Click **“Register Your Fizz Node“**, To complete the registration, you'll need some ETH on the Spheron chain for gas fees. If you don't have any, you can get some from our [faucet](https://faucet.spheron.network) or use Arbitrum Sepolia ETH and
+[bridge](https://spheron-devnet-eth.bridge.caldera.xyz/) it to the Spheron Chain to complete your registration.
+
 
 
 ## Run the Fizz Node
 1. In setup page for your registered nod, You should find a link to download the `fizzup.sh` script
 
-![image](https://github.com/user-attachments/assets/3052022b-2a14-42a7-8613-bf6ea5624a08)
+![Screenshot 2024-11-13 114838](https://github.com/user-attachments/assets/909d658d-7754-4e1a-ae2c-a056c6152a15)
+
 
 2. Download the `fizzup.sh` script to your PC. Send it to your VPS using `Mobaxterm` or `Termius` Clients
 
@@ -68,12 +70,12 @@ docker --version
 4. Give persmissions to script
 ```console
 # assuming I transfered the script to the main (root) folder of server
-chmod +x /root/fizzup-v1.0.1.sh
+chmod +x /root/fizzup-v1.1.0.sh
 ```
 
 5. Run Fizz Node Script
 ```
-./fizzup-v1.0.1.sh
+./fizzup-v1.1.0.sh
 ```
 
 ![image](https://github.com/user-attachments/assets/8c9d5d68-fa8c-42be-96e3-25f9958a0c25)
@@ -93,7 +95,8 @@ or
 docker-compose -f ~/.spheron/fizz/docker-compose.yml logs -f
 ```
 
-![image](https://github.com/user-attachments/assets/654ba484-14a2-4994-9a88-bdc10480b327)
+![Screenshot 2024-11-13 115517](https://github.com/user-attachments/assets/399e99ba-01d9-4465-8f1f-cd1050aea928)
+
 
 Once you've verified the node is running, return to the setup page on the Spheron Fizz App
 
@@ -101,14 +104,18 @@ Once you've verified the node is running, return to the setup page on the Sphero
 
 2. Alternatively, you can toggle on the "Automatically check status" switch to have the system periodically check your node's status without manual intervention
 
-![image](https://github.com/user-attachments/assets/4c22eeda-92b3-4951-a572-d40bceb7585d)
+![Screenshot 2024-11-13 115627](https://github.com/user-attachments/assets/8e0ad777-aa4a-4737-ac10-4e70a7e24e8a)
+
 
 3. The system will now perform checks to validate if your node is active and correctly configured
 
 The validation process may take a few minutes. During this time, the system verifies your node's connectivity, resource availability, and configuration. Once your node is confirmed active, you will be automatically directed to your Fizz dashboard
 
-![image](https://github.com/user-attachments/assets/a35241fd-841b-4ad6-bd99-36dc1a74970c)
+![Screenshot 2024-11-13 115925](https://github.com/user-attachments/assets/f3f727d2-c426-4644-b644-05a8d45baf92)
 
+4. You can now see your phase mutiplier, phase point per era and total phase point
+
+![Screenshot 2024-11-13 120148](https://github.com/user-attachments/assets/7190006a-8067-4eb8-8845-f29e1675003e)
 
 ## Claim your NFT in the Dashboard
 
@@ -122,19 +129,7 @@ Role: https://guild.xyz/spheronfdn
 
 ![image](https://github.com/user-attachments/assets/1ffe2ef2-4acc-49df-bc78-b87d7d041f8e)
 
-## Intract Role
-Do this **[Task](https://www.intract.io/quest/66fc0ba3637a91d0af13e7fc?referralCode=yrsN1m&referralSource=QUEST_PAGE&referralLink=https%3A%2F%2Fwww.intract.io%2Fquest%2F66fc0ba3637a91d0af13e7fc%3Fcampaign_initiator_type%3Dexplore%26card_position%3D0
-)** and claim a role
 
-## Check your VPS resources (RAM, CPU) with htop
-```console
-# Install htop
-sudo apt install htop
-
-# run htop
-htop
-```
-![image](https://github.com/user-attachments/assets/f767070a-543a-4a43-a8d0-8150bfbcf487)
 
 
 
