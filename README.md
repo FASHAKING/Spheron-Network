@@ -125,6 +125,7 @@ The validation process may take a few minutes. During this time, the system veri
 ## Join Discord and Claim your role
 Discord: https://discord.gg/spheron-network-745315423783878757
 
+## Connect wallet with OG Nft
 Role: https://guild.xyz/spheronfdn
 
 ![image](https://github.com/user-attachments/assets/1ffe2ef2-4acc-49df-bc78-b87d7d041f8e)
